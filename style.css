@@ -8,9 +8,11 @@
 
 body{
     background-color: black;
-    font-family: 'Poppins','sans-serif';
+    font-family: 'Poppins', 'sans-serif';
     overflow-x: hidden;
+    margin: 0;
     width: 100%;
+    height: 100%;
 }
 
 a{
@@ -121,12 +123,13 @@ ul{
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 90vh;
+    height: 90vh; /* Adjust height as needed */
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -10;
+    z-index: -10; /* Ensures it remains below content */
     opacity: 0.5;
+    pointer-events: none; 
 }
 
 .hero-section{
@@ -231,6 +234,126 @@ ul{
     color:#a97e40;
 }
 
+/* body content */
+
+.bg-custom-black{
+    margin: 0; 
+    background-color: #161616;
+    position: relative;
+    min-height: 100vh;
+    z-index: 1; 
+    overflow: hidden;
+    padding: 8rem 0;
+}
+
+.section-one{
+    width: 80%;
+    margin: auto;
+}
+
+.section-one div:first-child{
+    text-align: center;
+    color:#a97e40;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.section-one .border-bottom{
+    width: 50px;
+    margin: auto;
+    border-bottom: 1px solid rgb(66, 66, 66);
+}
+
+.section1-subcontainer{
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Img-section1{
+    width: inherit;
+    margin: auto;
+}
+
+.Img-section1 img{
+    width: 500px;
+    border-radius: 50%;
+}
+
+.section1-subcontainer .content{
+    margin: 0 3rem;
+    width: inherit;
+}
+
+.section1-subcontainer .content .section1-heading,.section1-subcontainer2 .content .section1-heading{
+    font-size: 20px;
+}
+
+.section1-subcontainer .content .section1-description{
+    color: rgb(152, 152, 152);
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.section1-subcontainer .Order-link{
+    display: inline-block;
+    color: white;
+    background-color: #a97e40; 
+    width: 120px;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+
+.section1-subcontainer2 .chat-with-us{
+    margin-top: 1rem;
+    display: inline-block;
+    color: white;
+    background-color: #a97e40; 
+    width: 120px;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+
+.section1-subcontainer .Order-link:hover, .chat-with-us:hover{
+    opacity: 1;
+    cursor: pointer; 
+}
+
+.section1-subcontainer2{
+    display: flex;
+}
+
+.section1-subcontainer2 .Img-section1{
+    order: 2;
+}
+
+.section1-subcontainer2 .content .text-custom-gray{
+    color: rgb(152, 152, 152);
+}
+
+.section1-subcontainer2 .content .section1-description{
+    margin: 1rem 0;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+.mt-4{
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 768px){
     .hero-section .heading{
         font-size: 20px;
@@ -263,6 +386,18 @@ ul{
     }
     .hamburger .material-symbols-outlined:hover{
         color:#a97e40;
+    }
+    .section-one{
+        width: 90%;
+    }
+    .section1-subcontainer{
+        display: block;
+    }
+    .section1-subcontainer .content{
+        margin: 0;
+    }
+    .section1-subcontainer2{
+        display: block;
     }
 }
 
