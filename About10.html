@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Cordyceps Fuel</title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f8f8f8;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Header */
+      header {
+        background-color: #fff;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav ul li a {
+        color: #333;
+        font-weight: bold;
+      }
+
+      /* Section Styling */
+      .section {
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      .section-light {
+      }
+
+      .section-dark {
+        background-color: #fef7ec;
+      }
+
+      h1,
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #222;
+      }
+
+      h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-top: 100px;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .content-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .content-item {
+        flex: 1 1 calc(50% - 20px);
+        background-color: #fff;
+
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .content-item img {
+        border-radius: 10px;
+      }
+
+      .content-item h3 {
+        margin-bottom: 10px;
+        font-size: 1.7rem;
+      }
+
+      /* Values Section */
+      .values-list {
+        text-align: left;
+        margin-top: 20px;
+      }
+
+      .values-list li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .values-list li img {
+        width: 20px;
+        margin-right: 10px;
+      }
+
+      /* Unique Approach Section */
+      .approach-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+      }
+
+      .approach-item {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: left;
+      }
+
+      .approach-item h3 {
+        margin-bottom: 15px;
+      }
+
+      /* Call to Action */
+      .cta {
+        background-color: #9a690f;
+        color: #fff;
+
+        padding: 50px 20px;
+        text-align: center;
+        border-radius: 10px;
+      }
+
+      .cta a {
+        background-color: #fff;
+        color: #916327;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 20px;
+      }
+      .offers-section {
+        background-color: #996515;
+
+        text-align: center;
+        padding: 40px 20px;
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        max-width: 900px;
+        margin: auto;
+        color: azure;
+      }
+      .offers-section h2 {
+        color: #fff;
+      }
+      .offers-section a {
+        background-color: #fff;
+        color: #222;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+
+      .divider-1 {
+        margin-top: 12px;
+      }
+      .divider-1 p {
+        color: #fff;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #111;
+        color: #fff;
+        text-align: center;
+        padding: 50px 20px;
+        margin-top: 50px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+
+      .footer-column {
+        text-align: left;
+      }
+      .footer-column p {
+        color: #fff;
+      }
+
+      .footer-column h4 {
+        margin-bottom: 10px;
+      }
+
+      .footer-column ul {
+        list-style: none;
+      }
+
+      .footer-column ul li {
+        margin-bottom: 8px;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid #333;
+        margin-top: 50px;
+        padding-top: 10px;
+        margin-bottom: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Cordyceps Fuel</div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./AboutUs.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./">Blog</a></li>
+          <li><a href="./Contactus.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section section-light">
+      <h1>About Us</h1>
+      <h2>Our Journey to Wellness</h2>
+      <p>
+        At Cordyceps Fuel, we specialize in harnessing the power of Cordyceps
+        Sinensis, a revered mushroom known for its exceptional health benefits.
+        Our commitment to quality begins with sourcing premium ingredients
+        directly from the majestic Himalayas, ensuring each product delivers
+        optimal efficacy. With years of experience, we aim to empower your
+        wellness journey through nature's finest offerings.
+      </p>
+    </section>
+
+    <section class="section section-dark">
+      <div class="content-container">
+        <div class="content-item">
+          <img src="./Assests/35.jpg" alt="Journey Image" />
+          <h3>Our Mission</h3>
+          <p>
+            At Cordyceps Fuel, our mission is to elevate health and wellness
+            through high-quality, natural supplements. We strive to educate our
+            customers about the benefits of Cordyceps Sinensis, inspiring a
+            healthier lifestyle. Our dedication to sustainability ensures that
+            we protect the environment while delivering premium-grade products.
+            We prioritize customer satisfaction and wellness in every aspect of
+            our business. Together, we can transform lives through nature.
+          </p>
+        </div>
+        <div class="content-item">
+          <img src="./Assests/37.jpg" alt="Mission Image" />
+          <h3>Our Core Values</h3>
+          <ul class="values-list">
+            <li>
+              <img src="./Assests/25.png" alt="Integrity Icon" />
+              Integrity is at the heart of Cordyceps Fuel. We ensure
+              transparency and honesty in our sourcing, production, and customer
+              interactions.
+            </li>
+            <li>
+              <img src="./Assests/25.png" alt="Quality Icon" />
+              Quality is our utmost priority. We meticulously select the finest
+              Cordyceps Sinensis to guarantee that our customers receive only
+              the best.
+            </li>
+            <li>
+              <img src="./Assests/25.png" alt="Sustainability Icon" />
+              Sustainability shapes our business practices. We are committed to
+              environmentally friendly initiatives that preserve and protect our
+              planet for future generations.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <h2>Our Unique Approach to Wellness</h2>
+      <p>
+        We believe in a holistic approach to health, integrating nature with
+        science. Our commitment allows us to offer superior Cordyceps products
+        tailored for every individual.
+      </p>
+      <div class="approach-grid">
+        <div class="approach-item">
+          <h3>Himalayan Sourcing</h3>
+          <p>
+            We ethically source our Cordyceps Sinensis directly from the
+            pristine Himalayan mountains, ensuring maximum potency and
+            effectiveness. Our relationship with local farmers promotes
+            sustainable practices.
+          </p>
+        </div>
+        <div class="approach-item">
+          <h3>Rigorous Quality Testing</h3>
+          <p>
+            Every batch undergoes comprehensive quality testing to meet our high
+            standards for purity and potency. This guarantees a premium product
+            that our customers can trust.
+          </p>
+        </div>
+        <div class="approach-item">
+          <h3>Customer-Centric Service</h3>
+          <p>
+            We prioritize our customers’ needs with fast delivery, responsive
+            support, and educational resources. Our goal is to create a seamless
+            and enriching experience for every individual.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="offers-section">
+      <h2>Stay Connected for Exclusive Offers</h2>
+      <a href="#" class="explore-btn">Explore Now</a>
+      <div class="divider-1"><p>Or Call Us At:</p></div>
+
+      <div class="call-number">5455</div>
+    </div>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>About Us</h4>
+          <p>
+            Join our community and discover the benefits of natural health
+            solutions.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About10.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="./Contactus.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact Us</h4>
+          <p>555-6544</p>
+          <p>support@cordycepsfuel.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Cordyceps Fuel. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

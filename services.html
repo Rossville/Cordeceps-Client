@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cordyceps Fuel - Premium Offerings</title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f8f8f8;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* Header */
+      header {
+        background-color: #fff;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav ul li a {
+        color: #333;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        color: #c49b66;
+      }
+
+      /* Hero Section */
+      .hero {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #fff;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        color: #222;
+      }
+
+      /* Offerings Section */
+      .offerings {
+        background-color: #fef7ec;
+        padding: 50px 20px;
+      }
+
+      .offerings .offerings-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .offering {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .offering:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      .offering img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .offering h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .offering p {
+        font-size: 1rem;
+        color: #555;
+        text-align: justify;
+      }
+
+      /* Benefits Section */
+      .benefits-section {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #ffffff;
+      }
+
+      .benefits-section h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #3e2601;
+      }
+
+      .benefits-description {
+        font-size: 1rem;
+        margin-bottom: 40px;
+        color: #5c5c5c;
+      }
+
+      .benefits-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .benefit-item {
+        flex: 1;
+        max-width: 30%;
+        text-align: start;
+        margin: 0 10px;
+      }
+
+      .line {
+        width: 50px;
+        height: 2px;
+        background-color: #996515;
+        margin-bottom: 10px;
+      }
+
+      .benefit-item h3 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #3e2601;
+      }
+
+      .benefit-item p {
+        font-size: 1rem;
+        text-align: justify;
+        color: #5c5c5c;
+        line-height: 1.5;
+      }
+
+      /* Call to Action */
+      .cta {
+        background-color: #916327;
+        color: #fff;
+        padding: 50px 20px;
+        text-align: center;
+        margin-top: 50px;
+        border-radius: 10px;
+      }
+
+      .cta h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .cta a {
+        background-color: #fff;
+        color: #916327;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 20px;
+      }
+
+      .cta p {
+        margin-top: 10px;
+      }
+
+      .cta strong {
+        font-size: 1.2rem;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #fff;
+        padding: 30px 20px;
+        text-align: center;
+        border-top: 1px solid #ddd;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: left;
+        gap: 20px;
+      }
+
+      .footer-section {
+        flex: 1 1 calc(33.33% - 20px);
+      }
+
+      .footer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      .footer-section ul {
+        list-style: none;
+      }
+
+      .footer-section ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-section ul li a {
+        color: #555;
+      }
+
+      footer p {
+        font-size: 0.9rem;
+        color: #777;
+      }
+      @media (max-width: 768px) {
+        .benefits-container {
+          flex-direction: column;
+          gap: 30px;
+        }
+
+        .benefit-item {
+          max-width: 100%;
+        }
+
+        .benefit-item h3 {
+          font-size: 1.1rem;
+        }
+
+        .benefit-item p {
+          font-size: 0.9rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .benefits-section h2 {
+          font-size: 1.8rem;
+        }
+
+        .benefit-item h3 {
+          font-size: 1rem;
+        }
+
+        .benefit-item p {
+          font-size: 0.8rem;
+        }
+
+        .line {
+          width: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Cordyceps Fuel</div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./AboutUs.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="./Contactus.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Premium Offerings</h1>
+    </section>
+
+    <section class="offerings">
+      <div class="offerings-container">
+        <div class="offering">
+          <img src="./Assests/38.png" alt="Quality Assurance" />
+          <div>
+            <h3>01<br />Quality Assurance</h3>
+            <p>
+              At Cordyceps Fuel, quality assurance is at the forefront of our
+              operations. We source the highest-grade Cordyceps Sinensis from
+              the Himalayas, ensuring our products meet stringent quality
+              standards. Each batch undergoes thorough testing for purity and
+              potency, providing you peace of mind with every purchase. Our
+              dedication to quality helps support your health and wellness
+              journey effectively.
+            </p>
+          </div>
+        </div>
+        <div class="offering">
+          <img src="./Assests/40.jpg" alt="Fast Delivery" />
+          <div>
+            <h3>02<br />Fast Delivery</h3>
+            <p>
+              Cordyceps Fuel guarantees fast delivery for all customers,
+              ensuring you receive your products promptly. We’ve streamlined our
+              logistics processes to minimize wait times, allowing for quick
+              shipping to locations around the globe. With our efficient
+              tracking system, you can monitor your order from dispatch to
+              delivery. Experience the convenience of getting your health
+              essentials without the wait.
+            </p>
+          </div>
+        </div>
+        <div class="offering">
+          <img src="./Assests/41.jpeg" alt="Global Shipping" />
+          <div>
+            <h3>03<br />Global Shipping</h3>
+            <p>
+              At Cordyceps Fuel, we believe that everyone should have access to
+              the health benefits of premium Cordyceps Sinensis. Our global
+              shipping service ensures that no matter where you are located, you
+              can enjoy our premium products. We handle customs and various
+              shipping regulations to make your experience smooth and
+              hassle-free. Trust us to deliver wellness to your doorstep,
+              anywhere in the world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="benefits-section">
+      <h2>Reap the Health Benefits</h2>
+      <p class="benefits-description">
+        Experience enhanced well-being with our premium offerings. The following
+        benefits are for those ready to transform their health journey.
+      </p>
+      <div class="benefits-container">
+        <div class="benefit-item">
+          <div class="line"></div>
+          <h3>Increased Energy</h3>
+          <p>
+            Our products are designed to naturally boost your energy levels,
+            helping you feel more vibrant and active throughout the day.
+          </p>
+        </div>
+        <div class="benefit-item">
+          <div class="line"></div>
+          <h3>Stronger Immunity</h3>
+          <p>
+            Enhance your body’s defenses with our Cordyceps Sinensis, which can
+            support a robust immune system and overall health.
+          </p>
+        </div>
+        <div class="benefit-item">
+          <div class="line"></div>
+          <h3>Better Stress Management</h3>
+          <p>
+            Our products aim to reduce stress and anxiety, promoting a calm and
+            focused mental state for improved productivity.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="cta">
+      <h2>Stay Connected for Exclusive Offers</h2>
+      <a href="#">Explore Now</a>
+      <p>Or call us at: <strong>5455</strong></p>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            Join our community and discover the benefits of natural health
+            solutions. We are committed to delivering premium-quality Cordyceps
+            products to promote your wellness journey.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Phone: 5545454</p>
+          <p>Email: <a href="mailto:ashu@mail.com">ashu@mail.com</a></p>
+          <p>Support: 5455</p>
+        </div>
+      </div>
+      <p>&copy; 2024 Cordyceps Fuel. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
