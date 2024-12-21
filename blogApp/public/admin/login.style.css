@@ -1,0 +1,99 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.container{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px;
+    margin: 10rem auto;
+}
+
+.signup-container{
+    margin: 2rem 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 24px;
+}
+
+/* Error message styling */
+p {
+    margin: 0 0 15px;
+}
+
+p[style="color: red;"] {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Label styles */
+label {
+    display: block;
+    font-size: 14px;
+    color: #555555;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Input field styles */
+input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Additional text below the form */
+p a {
+    color: #007bff;
+}
+
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 80%;
+    }
+}
